@@ -90,6 +90,10 @@ img {
                     color: #000;
                     border: 2px solid #66C05D;
                     border-radius: 40px;
+                    &:hover{
+                        color: #fff;
+                        background-color: #66C05D;
+                    }
                 }
             }
         }
@@ -97,6 +101,9 @@ img {
     .container-wrapper-bottom{
         width: 100%;
         background-color: #fff;
+        .header-menu-two-button{
+            display: none;
+        }
         .header-menu-two{
             height: 70px;
             display: flex;
@@ -107,7 +114,11 @@ img {
                 line-height: 16px;
                 text-decoration: none;
                 color: #000;
-                padding: 0 20px;
+                margin: 0 20px;
+                padding-bottom: 2px;
+                &:hover{
+                    border-bottom: 1px solid #000;
+                }
             }
         }
     }
@@ -145,6 +156,11 @@ img {
             letter-spacing: 0.05em;
             border: 2px solid #fff;
             border-radius: 40px;
+            &:hover{
+                color: #66C05D;
+                background-color: #fff;
+
+            }
         }
         
     }
@@ -161,6 +177,7 @@ img {
         justify-content: space-around;
     }
     .title-sentence{
+        padding-bottom: 38px;
         font-weight: 600;
         font-size: 24px;
         line-height: 28px;
@@ -169,6 +186,7 @@ img {
     .block-product{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         .product{
             padding-top: 25px;
             display: flex;
@@ -205,17 +223,24 @@ img {
                 letter-spacing: 0.05em;
                 background-color: #66C05D;
                 border-radius: 40px;
+                &:hover{
+                    color: #000;
+                    background-color: #fff;
+                    border: 2px solid #66C05D;
+                    border-radius: 40px;
+                }
             }
         }
     }
     .block-mail{
+        padding-top: 100px;
         display: flex;
         justify-content: space-between;
         .malling-one{
             display: flex;
             align-items: center;
             justify-content: space-around;
-            width: 540px;
+            width: 48%;
             height: 212px;
             background-color: #66C05D;
             .bonus{
@@ -246,7 +271,7 @@ img {
         }
         .malling-two{
             padding: 35px;
-            width: 540px;
+            width: 48%;
             height: 212px;
             background-color: #66C05D;
             .come{
@@ -270,6 +295,11 @@ img {
                 color: #fff;
                 border: 2px solid #fff;
                 border-radius: 40px;
+                &:hover{
+                    color: #66C05D;
+                    background-color: #fff;
+    
+                }
             }
         }
     }
@@ -298,6 +328,13 @@ img {
                     width: 45px;
                     height: 45px;
                     border-radius: 50%;
+                    .social-link{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                        
+                    }
                 }
             } 
         }
@@ -328,6 +365,10 @@ img {
                     color: #000;
                     border: 2px solid #66C05D;
                     border-radius: 40px;
+                    &:hover{
+                        color: #fff;
+                        background-color: #66C05D;
+                    }
                 }
         }
 
@@ -345,5 +386,281 @@ img {
         font-size: 12px;
         line-height: 14px;
         color: #828282;
+    }
+}
+
+@media (max-width: 1116px){
+    .company .block-product {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        
+        .product{
+            margin-bottom: 30px;  
+            width: 34%;
+                
+        }
+        
+    }
+}
+
+@media (max-width: 1000px){
+    .company .block-mail .malling-one{
+        img{
+            display: none;
+        }
+    }
+
+}
+
+@media (max-width: 900px){
+    .footer-top{
+        height: 170px;
+        display: flex;
+        align-items: center;
+        .container{
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .footer-bottom{
+        height: 70px;
+        .footer-b{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            
+        }
+    }
+
+}
+
+@media (max-width: 662px){
+    .header .container-wrapper-middle .header-beauty .header-tel {
+        flex-direction: column;
+        align-items: center;
+        .header-contacts-value{
+            padding-right: 0;
+            padding-bottom: 15px;
+        }
+    }
+    .header .container-wrapper-middle .header-beauty .header-tel {
+        display: none;
+    }
+    .header .container-wrapper-bottom .header-menu-two-button {
+        display: flex;
+        height: 70px;
+        justify-content: space-between;
+        align-items: center;
+        .header-tel{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .header-contacts-value{
+                text-decoration: none;
+                font-size: 16px;
+                line-height: 19px;
+                color: #000;
+                padding-right: 40px;
+            }
+            .tel{
+                padding: 12px 27px;
+                font-size: 14px;
+                line-height: 16px;
+                text-decoration: none;
+                color: #000;
+                border: 2px solid #66C05D;
+                border-radius: 40px;
+                &:hover{
+                    color: #fff;
+                    background-color: #66C05D;
+                }
+            }
+        }
+
+        .header-menu-button{
+            display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 70px;
+        background-color: #fff;
+        
+        #menu__toggle {
+            opacity: 0;
+        }
+        .menu__btn {
+            display: flex; /* используем flex для центрирования содержимого */
+            align-items: center;  /* центрируем содержимое кнопки */
+            justify-content: center;
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            z-index: 1;
+            background-color: #66C05D;
+        }
+        /* добавляем "гамбургер" */
+        .menu__btn > span,
+        .menu__btn > span::before,
+        .menu__btn > span::after {
+            
+            display: block;
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background-color: #fff;
+        }
+        .menu__btn > span::before {
+            content: '';
+            top: -8px;
+        }
+        .menu__btn > span::after {
+            content: '';
+            top: 8px;
+        }
+        /* контейнер меню */
+        .menu__box {
+            display: block;
+            position: fixed;
+            visibility: hidden;
+            top: 170px;
+            width: 200px;
+            height: 100%;
+            
+            padding: 80px 0;
+            list-style: none;
+            text-align: center;
+            background-color: #E5E5E5;
+            box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        }
+        /* элементы меню */
+        .menu__item {
+            display: block;
+            padding: 12px 24px;
+            color: #000;
+            font-size: 20px;
+            font-weight: 400;
+            text-decoration: none;
+        }
+        .menu__item:hover {
+            background-color: #66C05D;
+            color: #fff;
+        }
+        #menu__toggle:checked ~ .menu__btn{
+            background-color: #E5E5E5;
+        }
+        #menu__toggle:checked ~ .menu__btn > span {
+            transform: rotate(45deg);
+            background-color: #000;
+        }
+        #menu__toggle:checked ~ .menu__btn > span::before {
+            top: 0;
+            transform: rotate(0);
+            background-color: #000;
+        }
+        #menu__toggle:checked ~ .menu__btn > span::after {
+            top: 0;
+            transform: rotate(90deg);
+            background-color: #000;
+        }
+        #menu__toggle:checked ~ .menu__box {
+            visibility: visible;
+            right: 0;
+        }
+        }
+        
+
+    }
+    .header {
+        .container-wrapper-bottom{
+            .header-menu-two {
+                display: none;
+            }
+        }
+    }
+    .company .block-mail {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+        .malling-one{
+            width: 90%;
+            margin-bottom: 30px;
+        }
+        .malling-two{
+            width: 90%;
+        }
+    }
+}
+@media (max-width: 518px){
+    .company .block-product {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        
+        .product{
+            margin-bottom: 30px;  
+            width: 255px;
+                
+        }
+        
+    }
+    .header{
+        .container-wrapper-bottom .header-menu-two-button .header-menu-button {
+            .menu__box{
+                top: 120px;
+            }
+        }
+        .container-wrapper-top{
+            display: none;
+            background-color: #E5E5E5;
+            height: 70px;
+            width: 100%;
+
+            
+        }
+    }
+
+}
+
+@media (max-width: 350px){
+    .company .block-mail{
+
+        .malling-one {
+            display: block;
+            padding: 35px;
+            height: 242px;
+            .bonus{
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 21px;
+                color: #fff;
+            }
+            .bonus-description{
+                padding: 20px 0;
+                font-size: 14px;
+                line-height: 20px;
+                color: #fff;
+            }
+            .subcribe{
+                textarea{
+                    outline: none;
+                    resize: none;
+                    border: none;
+                    border-radius: 40px;
+                    width: 200px;
+                    height: 35px;
+                    line-height: 35px;
+                    padding-left: 25px;
+                }
+            }
+        }
+    }
+    .footer-top .container .footer-tel .header-contacts-value {
+        display: none;
     }
 }
